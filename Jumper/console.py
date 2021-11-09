@@ -1,14 +1,14 @@
 class Console:
     def __init__(self):
-        self.file_name = "{}-string-jumper.txt"
+       
 
         
     def console_print(self, my_string:str):
         print(my_string)
 
     def get_input(self):
-        guess = input("Guess a letter: ")
-        return guess
+        self.guess = input("Guess a letter: ")
+        return self.guess
     
     def print_strings(self, number):
         self.line = open(f"{number}-string-jumper.txt")
