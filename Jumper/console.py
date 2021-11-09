@@ -5,6 +5,5 @@ class Console:
     def console_print(self, my_string:str):
         print(my_string)
 
-    def print_image(self, num_strings):
-        # format file_name and print the file
-        pass
+    def console_input(self):
+        return input("")
