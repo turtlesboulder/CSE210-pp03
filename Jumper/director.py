@@ -1,3 +1,5 @@
+from console import Console
 class Director:
     def __init__(self):
-        pass
+        console = Console()
+
