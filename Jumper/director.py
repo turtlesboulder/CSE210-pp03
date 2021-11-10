@@ -3,14 +3,14 @@ from word import Word
 from picker import Picker
 class Director:
     def __init__(self):
-        self.console = Console()
-        self.picker = Picker()
-        self.my_word = picker.get_word()
-        self.word = Word(my_word)
-        self.num_strings = 6
+        self._console = Console()
+        self._picker = Picker()
+        self._my_word = picker.get_word()
+        self._word = Word(my_word)
+        self._num_strings = 6
 
     def start_game(self):
-        self.console.instructions()
+        self._console.instructions()
         # console.parachute()
         displayed_word = self.word.get_word_display()
 
