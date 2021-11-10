@@ -22,3 +22,6 @@ class Word:
 
     def get_word_display(self):
         return self._word_display
+
+    def is_done(self):
+        return "_" not in self._word_display

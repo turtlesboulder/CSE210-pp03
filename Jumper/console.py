@@ -1,6 +1,6 @@
 class Console:
     def __init__(self):
-       
+       pass
 
         
     def console_print(self, my_string:str):
