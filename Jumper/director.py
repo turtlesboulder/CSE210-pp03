@@ -18,4 +18,13 @@ class Director:
         pass
 
     def game_loop(self):
+        game_input()
+        game_update()
+        game_output()
+    
+    def game_input():
+        self.letter = self.console.get_input()
+    def game_output():
+        pass
+    def game_put():
         pass
