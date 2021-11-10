@@ -1,9 +1,9 @@
 class Console:
     def __init__(self):
+
        self._has_guessed = False
        
-    
-        
+
     def instructions(self):
         self.instructions_text = open("instructions.txt")
         for i in self.instructions:
