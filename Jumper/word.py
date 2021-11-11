@@ -7,7 +7,8 @@ class Word:
     def _make_word_display(self):
         new_word = ""
         for _ in self._word:
-            new_word += f"_ "
+            if _ != " ":
+                new_word += f"_ "
 
         self._word_display = new_word
 
@@ -16,9 +17,10 @@ class Word:
         return guess in self._word
 
     def _reveal_letter(self, guess):
-        for i in range(len(self.word)):
-            if self._word[i] == guess:
-                self._word_display[i*2] == guess
+        for i in range(len(self._word)):
+            if self._word[i] == guess and self._word_display[i*2] != guess:
+                #self._word_display[i*2] = guess
+                self._word_display = self._word_display[:i*2] + guess + self._word_display[i*2:]
 
     def get_word_display(self):
         return self._word_display
