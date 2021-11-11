@@ -9,7 +9,7 @@ class Console:
         for i in line:
             print(i, end="")
 
-    def get_input(self, number):
+    def get_input(self):
         
         self._guess = str(input("Guess a letter [a-z]: "))
         return self._guess
