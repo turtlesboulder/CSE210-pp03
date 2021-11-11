@@ -5,8 +5,8 @@ class Console:
        
 
     def instructions(self):
-        self.instructions_text = open("instructions.txt")
-        for i in self.instructions:
+        line = open("instructions.txt")
+        for i in line:
             print(i, end="")
 
     def get_input(self, number):
@@ -20,6 +20,7 @@ class Console:
             print(i, end="")
 
 
-    
+console = Console()    
 
     
+console.instructions()
