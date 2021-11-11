@@ -1,4 +1,4 @@
 * Welcome to Jumper *
-Onjective: You have to guess the secret word by entering a letter one at a time.
+Objective: You have to guess the secret word by entering a letter one at a time.
 If your guess is incorrect, a line is cut on the player's parachute. The game will 
-continue until the word is guessed or you have not more lines in your parachute.
+continue until the word is guessed or when you have no more lines on your parachute.
