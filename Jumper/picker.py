@@ -1,9 +1,8 @@
 import random
 import json
-import requests
 
 class Picker:
-    def __init__(self, new_word):
+    def __init__(self):
         with open('words.json', 'r+') as word_list:
             words_string = word_list.read()
         words = json.loads(words_string)
