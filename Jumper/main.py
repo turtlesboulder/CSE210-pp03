@@ -1,8 +1,7 @@
-from director import Word
+from director import Director
 def main():
-    number = 6
-    word = Word()
-    word.get_string(number)
+    my_director = Director()
+    my_director.start_game()
     
 
 
