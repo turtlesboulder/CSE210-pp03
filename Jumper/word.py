@@ -9,6 +9,8 @@ class Word:
         for _ in self._word:
             if _ != " ":
                 new_word += f"_ "
+            else:
+                new_word += "  "
 
         self._word_display = new_word
 

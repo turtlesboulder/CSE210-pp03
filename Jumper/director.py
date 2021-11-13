@@ -5,25 +5,25 @@ class Director:
     def __init__(self):
         self._console = Console()
         self._picker = Picker()
-        my_word = self._picker.get_word()
-        self._word = Word(my_word)
+        self._my_word = self._picker.get_word()
+        self._word = Word(self._my_word)
         self._num_strings = 6
 
     def start_game(self):
         self._console.instructions()
-        self._console.print_strings(self._num_strings)
-        self.displayed_word = self._word.get_word_display()
+        self.displayed_word = self._word.get_word_display() 
+        self.game_output()
         self.game_loop()
 
     def end_game(self):
         pass
 
     def game_loop(self):
-        while not self._word.is_done():
+        while not self._word.is_done() and self._num_strings > 0:
             self.game_input()
             self.game_update()
             self.game_output()
-        print("Done!")
+        print(f"The word was: {self._my_word}")
     
     def game_input(self):
         self.letter = self._console.get_input()
@@ -35,5 +35,5 @@ class Director:
 
     def game_output(self):
         self._console.print_strings(self._num_strings)
-        print(self.displayed_word)
+        print(f"\n{self.displayed_word}")
 
