@@ -1,9 +1,10 @@
-from director import Director
-from word import Word
-from picker import Picker
+from director import Word
 def main():
-    director = Director()
-    director.start_game()
+    number = 6
+    word = Word()
+    word.get_string(number)
+    
+
 
 if __name__ == "__main__":
     main()
