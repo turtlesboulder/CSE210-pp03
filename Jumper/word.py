@@ -22,7 +22,7 @@ class Word:
         for i in range(len(self._word)):
             if self._word[i] == guess and self._word_display[i*2] != guess:
                 #self._word_display[i*2] = guess
-                self._word_display = self._word_display[:i*2] + guess + self._word_display[i*2:]
+                self._word_display = self._word_display[:i*2] + guess + self._word_display[i*2+1:]
 
     def get_word_display(self):
         return self._word_display
