@@ -5,7 +5,7 @@ class Console:
        
 
     def instructions(self):
-        line = open("instructions.txt")
+        line = open("Jumper\instructions.txt")
         for i in line:
             print(i, end="")
         print()
@@ -16,6 +16,6 @@ class Console:
         return self._guess
     
     def print_strings(self, number_string):
-        self._line = open(f"{number_string}-string-jumper.txt")
+        self._line = open(f"Jumper/{number_string}-string-jumper.txt")
         for i in self._line:
             print(i, end="")

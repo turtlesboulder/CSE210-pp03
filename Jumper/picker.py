@@ -3,9 +3,9 @@ import json
 
 class Picker:
     def __init__(self):
-        with open('words.json', 'r+') as word_list:
+        with open("jumper/words.json", "r+") as word_list:
             words_string = word_list.read()
-        words = json.loads(words_string)
+            words = json.loads(words_string)
         self.words_array = words["array"]
 
     def get_word(self):
